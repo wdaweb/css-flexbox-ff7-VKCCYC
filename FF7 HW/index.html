@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #c {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: url(./homework_ff7/bg-full.jpg) no-repeat center/cover;
+      /* filter: blur(10px); */
+      /* backdrop-filter: blur(10px); */
+
+    }
+
+    #c::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 1;
+      backdrop-filter: brightness(0.3);
+
+
+    }
+
+    .row {
+      width: 80vw;
+      height: 80vh;
+      display: flex;
+      border: 1px solid #333;
+      z-index: 5;
+
+    }
+
+    .l {
+      width: 40vw;
+      border: 1px solid #333;
+      background: url(./homework_ff7/main.jpg) no-repeat center;
+      background-size: cover;
+      text-align: center;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      z-index: 5;
+      /* filter: blur(10px); */
+
+    }
+
+    .l::before {
+      content: '';
+      width: 40%;
+      height: 80%;
+      position: absolute;
+      z-index: 1;
+      backdrop-filter: brightness(0.5);
+
+    }
+
+
+
+    .l p {
+      z-index: 5;
+      color: #fff;
+      font-size: 52px;
+      margin: 0;
+
+    }
+
+    .l span {
+      color: #fff;
+      width: 80%;
+      z-index: 5;
+
+    }
+
+    .l img {
+      z-index: 5;
+      width: 30%;
+
+    }
+
+    .r {
+      width: 40vw;
+      border: 1px solid #333;
+      display: flex;
+      flex-direction: column;
+      z-index: 5;
+    }
+
+    
+
+    .r .u {
+      height: 50%;
+      background-color: lightgrey;
+
+    }
+
+    .r .u #could {
+      width: 40%;
+      height: 94%;
+      /* position: relative; */
+      float: right;
+      /* vertical-align: middle; */
+      padding-top: 30px;
+    }
+
+    .rup {
+      margin-top: 80px;
+      margin-left: 40px;
+    }
+
+    .r .u p {
+      font-size: 52px;
+      margin: 0;
+      /* font-weight: 800; */
+    }
+
+    .r .u span {
+      clear: both;
+    }
+
+    .r .d {
+      height: 50%;
+      background-color: black;
+      padding: 10px;
+      padding-bottom: 0;
+
+    }
+
+
+    #tifa {
+      width: 45%;
+      height: 100%;
+      background: url(./homework_ff7/tifa.png) no-repeat top/cover;
+
+    }
+
+    .rdp {
+      width: 60%;
+      margin-top: 80px;
+      color: #fff;
+      z-index: 1;
+      float: right;
+    }
+
+    .r .d p {
+      font-size: 52px;
+      margin: 0;
+      /* font-weight: 800; */
+    }
+
+    .r .d span {
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="c">
+    <div class="row">
+      <div class="l">
+        <img src="./homework_ff7/ps4-ff7.png" alt="">
+        <p>AVAILABLE NOW</p>
+        <span>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo eum fuga modi id, doloremque temporibus dicta
+          nam repellat quasi perferendis autem, incidunt quisquam maxime libero sed a quaerat placeat magni.
+        </span>
+      </div>
+      <div class="r">
+        <div class="u">
+          <img id="could" src="./homework_ff7/cloud.png">
+          <div class="rup">
+            <p> Cloud </p>
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error saepe magnam excepturi eius explicabo
+              deleniti natus culpa tempora officiis minima consectetur, laborum corporis repellat molestias qui
+              provident.
+              Tempora, quos dolorum?
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates perspiciatis eum impedit esse
+              facilis, animi nisi delectus laboriosam iste sapiente a et nemo nesciunt velit odit magni, necessitatibus
+              magnam officiis.
+            </span>
+          </div>
+        </div>
+        <div class="d">
+          <div class="rdp">
+            <p> Tifa </p>
+            <span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error saepe magnam excepturi eius explicabo
+              deleniti natus culpa tempora officiis minima consectetur, laborum corporis repellat molestias qui
+              provident.
+              Tempora, quos dolorum?
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates perspiciatis eum impedit esse
+              facilis, animi nisi delectus laboriosam iste sapiente a et nemo nesciunt velit odit magni, necessitatibus
+              magnam officiis.
+            </span>
+          </div>
+
+          <div id="tifa"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
